@@ -54,11 +54,7 @@ function useSidebar() {
 }
 
 function SidebarProvider({
-  // The design system opens the nav by default only at the xl breakpoint
-  // (--bp-xl-base, 1800px) and up.
-  defaultOpen = typeof window !== "undefined"
-    ? window.innerWidth >= 1800
-    : true,
+  defaultOpen = true,
   open: openProp,
   onOpenChange: setOpenProp,
   className,
