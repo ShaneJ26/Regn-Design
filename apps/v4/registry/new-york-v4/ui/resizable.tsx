@@ -1,7 +1,7 @@
 "use client"
 
 import { cn } from "cn"
-import { GripVerticalIcon } from "lucide-react"
+import { GripVerticalIcon } from "@/registry/new-york-v4/lib/icons"
 import * as ResizablePrimitive from "react-resizable-panels"
 
 function ResizablePanelGroup({

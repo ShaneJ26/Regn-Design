@@ -3,7 +3,7 @@
 import * as React from "react"
 import { Command as CommandPrimitive } from "cmdk"
 import { cn } from "cn"
-import { SearchIcon } from "lucide-react"
+import { SearchIcon } from "@/registry/new-york-v4/lib/icons"
 
 import {
   Dialog,

@@ -3,7 +3,7 @@
 import * as React from "react"
 import { Combobox as ComboboxPrimitive } from "@base-ui/react"
 import { cn } from "cn"
-import { CheckIcon, ChevronDownIcon, XIcon } from "lucide-react"
+import { CheckIcon, ChevronDownIcon, XIcon } from "@/registry/new-york-v4/lib/icons"
 
 import { Button } from "@/registry/new-york-v4/ui/button"
 import {

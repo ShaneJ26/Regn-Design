@@ -6,7 +6,7 @@ import {
   ChevronDownIcon,
   ChevronLeftIcon,
   ChevronRightIcon,
-} from "lucide-react"
+} from "@/registry/new-york-v4/lib/icons"
 import {
   DayPicker,
   getDefaultClassNames,

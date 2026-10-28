@@ -4,7 +4,7 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
   MoreHorizontalIcon,
-} from "lucide-react"
+} from "@/registry/new-york-v4/lib/icons"
 
 import { buttonVariants, type Button } from "@/registry/new-york-v4/ui/button"
 
