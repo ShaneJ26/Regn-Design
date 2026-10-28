@@ -11,9 +11,11 @@ type IconProps = Omit<React.ComponentProps<"svg">, "ref">
 
 // Inline SVG from @hugeicons/core-free-icons (no icon font, works offline once bundled).
 function make(icon: IconSvgElement, name: string) {
-  function Icon({ className, ...props }: IconProps) {
+  function Icon({ className, strokeWidth, ...props }: IconProps) {
     const sized = /\bsize-\d/.test(className ?? "")
-    return <HugeiconsIcon icon={icon} size={sized ? undefined : "1em"} strokeWidth={1.5} aria-hidden="true" focusable="false" className={cn(className)} {...(props as any)} />
+    // HugeiconsProps narrows `strokeWidth` to a number, while SVG — and so IconProps — also allows a string.
+    const stroke = typeof strokeWidth === "number" ? strokeWidth : 1.5
+    return <HugeiconsIcon icon={icon} size={sized ? undefined : "1em"} strokeWidth={stroke} aria-hidden="true" focusable="false" className={cn(className)} {...props} />
   }
   Icon.displayName = name
   return Icon
