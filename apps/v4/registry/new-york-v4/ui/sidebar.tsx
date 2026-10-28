@@ -27,9 +27,9 @@ import {
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"
 const SIDEBAR_COOKIE_MAX_AGE = 60 * 60 * 24 * 7
-const SIDEBAR_WIDTH = "16rem"
+const SIDEBAR_WIDTH = "var(--nav-open)"
 const SIDEBAR_WIDTH_MOBILE = "18rem"
-const SIDEBAR_WIDTH_ICON = "3rem"
+const SIDEBAR_WIDTH_ICON = "var(--nav-closed)"
 const SIDEBAR_KEYBOARD_SHORTCUT = "b"
 
 type SidebarContextProps = {
@@ -54,7 +54,11 @@ function useSidebar() {
 }
 
 function SidebarProvider({
-  defaultOpen = true,
+  // The design system opens the nav by default only at the xl breakpoint
+  // (--bp-xl-base, 1800px) and up.
+  defaultOpen = typeof window !== "undefined"
+    ? window.innerWidth >= 1800
+    : true,
   open: openProp,
   onOpenChange: setOpenProp,
   className,
