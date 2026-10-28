@@ -2,8 +2,9 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { XIcon } from "@/registry/new-york-v4/lib/icons"
 import { Dialog as SheetPrimitive } from "radix-ui"
+
+import { XIcon } from "@/registry/new-york-v4/lib/icons"
 
 function Sheet({ ...props }: React.ComponentProps<typeof SheetPrimitive.Root>) {
   return <SheetPrimitive.Root data-slot="sheet" {...props} />

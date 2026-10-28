@@ -1,10 +1,8 @@
 import * as React from "react"
 import { cn } from "cn"
-import {
-  ChevronRight,
-  MoreHorizontal,
-} from "@/registry/new-york-v4/lib/icons"
 import { Slot } from "radix-ui"
+
+import { ChevronRight, MoreHorizontal } from "@/registry/new-york-v4/lib/icons"
 
 function Breadcrumb({ ...props }: React.ComponentProps<"nav">) {
   return <nav aria-label="breadcrumb" data-slot="breadcrumb" {...props} />

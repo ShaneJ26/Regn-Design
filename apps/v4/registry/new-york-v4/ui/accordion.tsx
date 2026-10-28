@@ -2,8 +2,9 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { ChevronDownIcon } from "@/registry/new-york-v4/lib/icons"
 import { Accordion as AccordionPrimitive } from "radix-ui"
+
+import { ChevronDownIcon } from "@/registry/new-york-v4/lib/icons"
 
 function Accordion({
   ...props

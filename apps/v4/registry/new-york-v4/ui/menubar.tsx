@@ -2,8 +2,13 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { CheckIcon, ChevronRightIcon, CircleIcon } from "@/registry/new-york-v4/lib/icons"
 import { Menubar as MenubarPrimitive } from "radix-ui"
+
+import {
+  CheckIcon,
+  ChevronRightIcon,
+  CircleIcon,
+} from "@/registry/new-york-v4/lib/icons"
 
 function Menubar({
   className,

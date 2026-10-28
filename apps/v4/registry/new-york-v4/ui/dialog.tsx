@@ -2,9 +2,9 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { XIcon } from "@/registry/new-york-v4/lib/icons"
 import { Dialog as DialogPrimitive } from "radix-ui"
 
+import { XIcon } from "@/registry/new-york-v4/lib/icons"
 import { Button } from "@/registry/new-york-v4/ui/button"
 
 function Dialog({

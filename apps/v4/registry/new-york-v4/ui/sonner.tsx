@@ -1,5 +1,8 @@
 "use client"
 
+import { useTheme } from "next-themes"
+import { Toaster as Sonner, type ToasterProps } from "sonner"
+
 import {
   CircleCheckIcon,
   InfoIcon,
@@ -7,8 +10,6 @@ import {
   OctagonXIcon,
   TriangleAlertIcon,
 } from "@/registry/new-york-v4/lib/icons"
-import { useTheme } from "next-themes"
-import { Toaster as Sonner, type ToasterProps } from "sonner"
 
 const Toaster = ({ ...props }: ToasterProps) => {
   const { theme = "system" } = useTheme()

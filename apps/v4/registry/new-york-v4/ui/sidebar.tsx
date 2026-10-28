@@ -3,10 +3,10 @@
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 import { cn } from "cn"
-import { PanelLeftIcon } from "@/registry/new-york-v4/lib/icons"
 import { Slot } from "radix-ui"
 
 import { useIsMobile } from "@/registry/new-york-v4/hooks/use-mobile"
+import { PanelLeftIcon } from "@/registry/new-york-v4/lib/icons"
 import { Button } from "@/registry/new-york-v4/ui/button"
 import { Input } from "@/registry/new-york-v4/ui/input"
 import { Separator } from "@/registry/new-york-v4/ui/separator"

@@ -1,8 +1,9 @@
 import * as React from "react"
 import { cva } from "class-variance-authority"
 import { cn } from "cn"
-import { ChevronDownIcon } from "@/registry/new-york-v4/lib/icons"
 import { NavigationMenu as NavigationMenuPrimitive } from "radix-ui"
+
+import { ChevronDownIcon } from "@/registry/new-york-v4/lib/icons"
 
 function NavigationMenu({
   className,

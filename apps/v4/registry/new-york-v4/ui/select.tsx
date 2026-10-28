@@ -2,8 +2,13 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { CheckIcon, ChevronDownIcon, ChevronUpIcon } from "@/registry/new-york-v4/lib/icons"
 import { Select as SelectPrimitive } from "radix-ui"
+
+import {
+  CheckIcon,
+  ChevronDownIcon,
+  ChevronUpIcon,
+} from "@/registry/new-york-v4/lib/icons"
 
 function Select({
   ...props

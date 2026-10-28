@@ -3,16 +3,16 @@
 import * as React from "react"
 import { cn } from "cn"
 import {
-  ChevronDownIcon,
-  ChevronLeftIcon,
-  ChevronRightIcon,
-} from "@/registry/new-york-v4/lib/icons"
-import {
   DayPicker,
   getDefaultClassNames,
   type DayButton,
 } from "react-day-picker"
 
+import {
+  ChevronDownIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+} from "@/registry/new-york-v4/lib/icons"
 import { Button, buttonVariants } from "@/registry/new-york-v4/ui/button"
 
 function Calendar({
