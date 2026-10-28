@@ -41,7 +41,7 @@ export function ThemeProvider({
 }: React.ComponentProps<typeof NextThemesProvider>) {
   return (
     <NextThemesProvider
-      attribute="class"
+      attribute={["class", "data-theme"]}
       defaultTheme="system"
       enableSystem
       disableTransitionOnChange
