@@ -2,8 +2,9 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { CheckIcon } from "lucide-react"
 import { Checkbox as CheckboxPrimitive } from "radix-ui"
+
+import { CheckIcon } from "@/registry/new-york-v4/lib/icons"
 
 function Checkbox({
   className,

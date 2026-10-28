@@ -1,11 +1,11 @@
 import * as React from "react"
 import { cn } from "cn"
+
 import {
   ChevronLeftIcon,
   ChevronRightIcon,
   MoreHorizontalIcon,
-} from "lucide-react"
-
+} from "@/registry/new-york-v4/lib/icons"
 import { buttonVariants, type Button } from "@/registry/new-york-v4/ui/button"
 
 function Pagination({ className, ...props }: React.ComponentProps<"nav">) {
@@ -107,7 +107,7 @@ function PaginationEllipsis({
     <span
       aria-hidden
       data-slot="pagination-ellipsis"
-      className={cn("flex size-9 items-center justify-center", className)}
+      className={cn("flex size-10 items-center justify-center", className)}
       {...props}
     >
       <MoreHorizontalIcon className="size-4" />

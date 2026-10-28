@@ -2,8 +2,13 @@
 
 import * as React from "react"
 import { cn } from "cn"
-import { CheckIcon, ChevronRightIcon, CircleIcon } from "lucide-react"
 import { Menubar as MenubarPrimitive } from "radix-ui"
+
+import {
+  CheckIcon,
+  ChevronRightIcon,
+  CircleIcon,
+} from "@/registry/new-york-v4/lib/icons"
 
 function Menubar({
   className,
@@ -13,7 +18,7 @@ function Menubar({
     <MenubarPrimitive.Root
       data-slot="menubar"
       className={cn(
-        "flex h-9 items-center gap-1 rounded-md border bg-background p-1 shadow-xs",
+        "flex h-10 items-center gap-1 rounded-md border bg-background p-1 shadow-xs",
         className
       )}
       {...props}
@@ -55,7 +60,7 @@ function MenubarTrigger({
     <MenubarPrimitive.Trigger
       data-slot="menubar-trigger"
       className={cn(
-        "flex items-center rounded-sm px-2 py-1 text-sm font-medium outline-hidden select-none focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground",
+        "flex h-8 items-center rounded-sm px-2 py-1 text-sm font-medium outline-hidden select-none focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground",
         className
       )}
       {...props}

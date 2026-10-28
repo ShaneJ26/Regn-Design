@@ -5,8 +5,8 @@ import { cn } from "cn"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react"
-import { ArrowLeft, ArrowRight } from "lucide-react"
 
+import { ArrowLeft, ArrowRight } from "@/registry/new-york-v4/lib/icons"
 import { Button } from "@/registry/new-york-v4/ui/button"
 
 type CarouselApi = UseEmblaCarouselType[1]
