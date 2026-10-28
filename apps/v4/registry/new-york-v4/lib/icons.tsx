@@ -50,3 +50,10 @@ export const TriangleAlertIcon = make(MAP.TriangleAlert)
 export function CircleIcon(props: IconProps) {
   return <svg viewBox="0 0 24 24" aria-hidden="true" {...props}><circle cx={12} cy={12} r={10} fill="currentColor" /></svg>
 }
+
+// Unsuffixed aliases for the lucide names some components import without the
+// `Icon` suffix (breadcrumb, carousel). Hand-added: fold into the generator.
+export const ChevronRight = ChevronRightIcon
+export const MoreHorizontal = MoreHorizontalIcon
+export const ArrowLeft = ArrowLeftIcon
+export const ArrowRight = ArrowRightIcon
